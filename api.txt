@@ -1,0 +1,6 @@
+api key: AIzaSyAMc0CRupQ7RUtrTUtdHRGDm4B2gXsyQrk
+
+https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyAMc0CRupQ7RUtrTUtdHRGDm4B2gXsyQrk
+
+
+GET https://youtube.googleapis.com/youtube/v3/playlists?part=snippet&id=aUczxogLJAc&key=[YOUR_API_KEY] HTTP/1.1

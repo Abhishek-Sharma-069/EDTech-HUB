@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edtech Hub-Registration Page</title>
+    <link
+      rel="shortcut icon"
+      href="./favicon/android-chrome-512x512.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(
+          to right,
+          rgb(67, 67, 177),
+          rgb(227, 67, 94)
+        );
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      #register-container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border-radius: 8px;
+        color: white;
+        background: linear-gradient(rgb(63, 59, 59), rgb(106, 106, 170));
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 1em;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+      }
+
+      button {
+        width: 100%;
+        margin-top: 1em;
+        padding: 10px;
+        background-color: red;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      form {
+        position: relative;
+        top: 10%;
+      }
+      form a {
+        color: rgb(90, 204, 90);
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header id="header">
+        <a href="#" class="logo">EdTech<sup>Hub</sup></a>
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <nav id="navbar" class="navbar">
+          <a href="index.html">home</a>
+          <a href="course.html">course</a>
+          <a href="teacher.html">teacher</a>
+          <a href="price.html">price</a>
+          <a href="review.html">review</a>
+          <a href="articles.html">article</a>
+          <a href="contact.html">contact</a>
+        </nav>
+      </header>
+
+      <div id="register-container">
+        <form action="register.php" method="post">
+          <h2 style="text-align: center">Register</h2>
+          <label for="new-username">New Username:</label>
+          <input
+            type="text"
+            id="new-username"
+            placeholder="Enter your new username"
+            required
+          />
+
+          <label for="new-password">New Password:</label>
+          <input
+            type="password"
+            id="new-password"
+            placeholder="Enter your new password"
+            required
+          />
+          <a href="login_page.html">Registered User! Log In</a>
+          <button onclick="register()">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

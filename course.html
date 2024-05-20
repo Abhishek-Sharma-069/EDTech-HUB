@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdTech Hub-course</title>
+    <link rel="shortcut icon" href="./favicon/android-chrome-512x512.png" type="image/x-icon">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .video {
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    .video img {
+      max-width: 100%;
+    }
+    </style>
+
+</head>
+<body>
+    
+<div class="container">
+
+<header id="header">
+
+    <a href="#" class="logo">Edtech<sup>Hub</sup></a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="course.html">course</a>
+        <a href="teacher.html">teacher</a>
+        <a href="price.html">price</a>
+        <a href="review.html">review</a>
+        <a href="articles.html">article</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+</header>
+
+<h1 class="heading"> popular courses </h1>
+
+<!-- course section  -->
+<section class="api-fetch">
+    <div id="search-section">
+        <input type="text" id="search-input" placeholder="Enter search query">
+        <button onclick="searchVideos()">Search</button>
+      </div>
+    <div id="video-container"></div>
+</section>
+
+<section class="course">
+
+    <div class="box">
+        <span class="amount">Free</span>
+        <img src="images/downlo85.jpg" alt="">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <h3>Data Structures and Algorithms In C</h3>
+        <p>Data Structures and Algorithms in C Using C DSA Data Structures Algorithms LeetCode C DSA C viva MCQ Interview Questions</p>
+        <a href="https://www.youtube.com/playlist?list=PLPcYxxhPkhOlnvl6gJqaP4exto3Cse0dK" class="btn" target="_blank">learn more</a>
+        <div class="icons">
+            <p> <i class="far fa-clock"></i> 22 hours </p>
+            <p> <i class="far fa-calendar"></i> 3 months </p>
+            <p> <i class="fas fa-book"></i> 12 modules </p>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="amount">₹2000</span>
+        <img src="images/download.jpg" alt="">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+        <h3>Python Bootcamp From Zero to Hero in Python</h3>
+        <p>Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games</p>
+        <a href="https://www.udemy.com/course/complete-python-bootcamp/" class="btn" target="_blank">learn more</a>
+        <div class="icons">
+            <p> <i class="far fa-clock"></i> 15 hours </p>
+            <p> <i class="far fa-calendar"></i> 1 months </p>
+            <p> <i class="fas fa-book"></i> 12 modules </p>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="amount">₹2500</span>
+        <img src="images/download1.png" alt="">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+        <h3>front end development</h3>
+        <p>Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps</p>
+        <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" class="btn" target="_blank">learn more</a>
+        <div class="icons">
+            <p> <i class="far fa-clock"></i> 20 hours </p>
+            <p> <i class="far fa-calendar"></i> 3 months </p>
+            <p> <i class="fas fa-book"></i> 16 modules </p>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="amount">₹1000</span>
+        <img src="images/downl.jpg" alt="">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+        <h3>ChatGPT Complete Guide</h3>
+        <p>ChatGPT Plugins + 25 Powerful AI Tools 10x Your Productivity and Creativity | ChatGPT, Generative AI, Prompt Engineering</p>
+        <a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/chatgpt-for-beginners" class="btn" target="_blank">learn more</a>
+        <div class="icons">
+            <p> <i class="far fa-clock"></i> 2 hours </p>
+            <p> <i class="far fa-calendar"></i> 6 months </p>
+            <p> <i class="fas fa-book"></i> 12 modules </p>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="amount">₹4000</span>
+        <img src="images/downloa4.jpg" alt="">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+        <h3>Android Development Courses</h3>
+        <p>Learn Kotlin and develop android applications from 0 to Hero. Start your Android App Development career now and be Pro !</p>
+        <a href="https://www.udemy.com/course/complete-ai-guide/" class="btn" target="_blank">learn more</a>
+        <div class="icons">
+            <p> <i class="far fa-clock"></i> 2 hours </p>
+            <p> <i class="far fa-calendar"></i> 6 months </p>
+            <p> <i class="fas fa-book"></i> 12 modules </p>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="amount">Free</span>
+        <img src="images/download45.jpg" alt="">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <h3>C Programming For Beginners</h3>
+        <p>C Programming will increase career options. Become a better dev in other languages by learning C. Pointers explained</p>
+        <a href="https://youtube.com/playlist?list=PLPcYxxhPkhOl4s3ejQITo4RminVL2aR3I&si=c7hTTJ6cDYh9wxsk" class="btn" target="_blank">learn more</a>
+        <div class="icons">
+            <p> <i class="far fa-clock"></i> 2 hours </p>
+            <p> <i class="far fa-calendar"></i> 6 months </p>
+            <p> <i class="fas fa-book"></i> 12 modules </p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>We all a 2nd year Student study in United Institute of Technology
+                Prayagraj,nani
+            </p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">course</a>
+            <a href="#">teacher</a>
+            <a href="#">price</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+           <p> <i class="fas fa-phone"></i> +913-456-7890 </p>
+           <p> <i class="fas fa-envelope"></i> studysmart@gmail.com </p>
+           <p> <i class="fas fa-map-marker-alt"></i> Prayagraj, india - 211003 </p>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span>My Team</span> </span> | all rights reserved </div>
+
+</section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link -->
+<script src="script.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
